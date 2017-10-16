@@ -19,4 +19,4 @@ script:
 
 after_success:
   # Update coverage information in codecov.io.
-  - test $TOXENV = "py36" && codecov
+  - test $TOXENV = "py36" && .tox/py36/bin/codecov
