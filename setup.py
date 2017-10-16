@@ -31,7 +31,7 @@ test_requires = [
 
 setup(
     name='websauna.j2secret',
-    version='1.0.0a1',
+    version='1.0.0a2.dev0',
     description='Websauna Jinja2 extension that adds a tag to generate secrets.',
     long_description=README + '\n\n' + CHANGES,
     classifiers=[
