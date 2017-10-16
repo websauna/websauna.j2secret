@@ -19,4 +19,5 @@ script:
 
 after_success:
   # Update coverage information in codecov.io.
-  - .tox/py36/bin/codecov
+  - test $TOXENV = "py36" && cat /home/travis/build/websauna/websauna.j2secret/coverage.xml
+  - test $TOXENV = "py36" && codecov
