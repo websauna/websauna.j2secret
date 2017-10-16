@@ -17,8 +17,7 @@ requires = [
 ]
 
 dev_requires = [
-    'check-manifest',
-    'zest.releaser'
+    'zest.releaser[recommended]'
 ]
 
 test_requires = [
