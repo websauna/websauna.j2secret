@@ -16,3 +16,7 @@ install:
 
 script:
   - tox -e $TOXENV
+
+after_success:
+  # Update coverage information in codecov.io.
+  - .tox/py36/bin/codecov

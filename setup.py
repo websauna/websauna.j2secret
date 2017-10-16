@@ -16,9 +16,17 @@ requires = [
     'jinja2',
 ]
 
+dev_requires = [
+    'check-manifest',
+    'zest.releaser'
+]
+
 test_requires = [
+    'codecov',
+    'coverage',
     'flake8',
     'pytest',
+    'pytest-cov',
 ]
 
 
@@ -45,11 +53,13 @@ setup(
     author='Websauna Team',
     author_email='developers@websauna.org',
     url='https://github.com/websauna/websauna.j2secret',
+    license='MIT',
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
     install_requires=requires,
     extras_require={
+        'dev': dev_requires,
         'test': test_requires,
     },
     entry_points="""""",
